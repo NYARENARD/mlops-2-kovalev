@@ -1,0 +1,26 @@
+[project]
+name = "poetry-project"
+version = "0.1.0"
+description = "работа 2 по mlops"
+authors = [
+    {name = "Miamus",email = "nyarenardonly@gmail.com"}
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "requests (>=2.34.2,<3.0.0)",
+    "matplotlib (>=3.11.2,<4.0.0)",
+    "pandas (>=3.0.6,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+test = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
+dev = [
+    "ruff (>=0.17.0,<0.18.0)"
+]
